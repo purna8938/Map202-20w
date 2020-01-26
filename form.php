@@ -22,9 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ?>
 
-
-
-
 <!DOCTYPE html>
 <html>
 	<header>
@@ -36,10 +33,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <h2>HTML Form</h2>
 <form action="form.php" method="post">
-  First name:<br>
+  Movie name:<br>
   <input type="text" name="moviename">
   <br>
-  director: <select name="Director">
+  director:<br>
+	<select name="Director">
+	
 <?php
 			
 	foreach($result as $direct) {
@@ -50,19 +49,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 	</select>
   <br>
-		collection: <select name="Budget">
+		collection: <br>
+	<select name="Budget">
+	<br>
 <?php
 			
-	foreach($result as $f) {
-		echo '<option>'.$f['budget'].'</option>' ;
+	foreach($result as $finance) {
+		echo '<option>'.$finance['budget'].'</option>' ;
 	}
 	
 	
 ?>
 	</select>
-	</select>
   <br>
-		Actor: <select name="Actor">
+		Actor: <br>
+	<select name="Actor">
+	<br>
 <?php
 			
 	foreach($result as $val) {
@@ -72,11 +74,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	
 ?>
 	</select>
-	</select>
   <br>
-		Actor: <select name="Actress">
+		Actress:<br>
+	<select name="Actress">
+	<br>
 <?php
-			
 	foreach($result as $role) {
 		echo '<option>'.$role['actress'].'</option>' ;
 	}
@@ -84,6 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	
 ?>
 	</select>
+	<br>
   <input type="submit" value="Submit">
 </form> 
 

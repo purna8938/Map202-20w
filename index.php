@@ -1,7 +1,9 @@
-
-
 <?php
-$films = array(
+require_once 'form.php';
+
+
+
+ $films = array(
             "comedy" => array (
                             0 => "Pink Panther",
                            1 => "johnny English",
@@ -14,7 +16,9 @@ $films = array(
             "Romance" => array (
                             0 => "Romeo and Juliet")
 );
-	$favorites = array(
+	
+
+$favorites = array(
 array (
 "Name" => "Dave Punk",
 "Phone" => "5689741523",
@@ -28,12 +32,23 @@ array (
 "Phone" => "9875147536",
 "Email" => "johnflinch@gmail.com")
 );
+
+
+
+
 ?>
+
+
+
+
 <!DOCTYPE html>
 <html>
 	<header>
 	</header>
 <body>
+	<a href="form.php">
+	</a>
+ 
 	<section>
 		<h1>
 			
