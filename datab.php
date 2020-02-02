@@ -1,15 +1,18 @@
-   <?php
-$dbhost = 'remotemysql.com';
+<?php 
+    function db_connect() {
+	$dbhost = 'remotemysql.com';
     $dbname = 'VHwLINMsoT';
     $dbuser = 'VHwLINMsoT';
-    $dbpass = 'QvwOG1630d';
-    
-    $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
+    $dbpass = 'i8tV3BAx7x';
+    try {
+		$dbh =new PDO('mysql:host=remotemysql.com;dbname=VHwLINMsoT', $dbuser, $dbpass);
+		
+    } catch (PDOException $e) {
+        echo "Error: ".$e->getMessage();
+       
+    }
+		return $dbh;
+}
+   
 
-    $query = "SELECT * FROM movies";
-    $stmt = $conn->prepare($query);
-    $stmt->execute();
-
-    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-   // print_r($result);
 ?>

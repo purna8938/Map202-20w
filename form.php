@@ -1,14 +1,14 @@
 <?php
 	
-require_once 'datab.php';
+//require_once 'datab.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["moviename"])) {
-    echo "movie feild is empty";
-  } else {
-     echo "the movie name is:" .$_POST['moviename'];
-	  echo '<br>';
-  }
+//if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ // if (empty($_POST["moviename"])) {
+ //   echo "movie feild is empty";
+ // } else {
+ //    echo "the movie name is:" .$_POST['moviename'];
+//	  echo '<br>';
+ // }
     echo "movie directed by :" .$_POST['Director'];
 	echo '<br>';
 	 echo "the budget for the movie:" .$_POST['Budget'];
@@ -17,12 +17,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	echo '<br>';
 	 echo "the heroine: " .$_POST['Actress'];
 	echo '<br>';
+	
 }
-
-
+//Psai@123
+//dravid!231
+//sameera#123
+//nagendra|abhi
+//echo $hash = password_hash("Psai@123", PASSWORD_DEFAULT);
 ?>
 
-<!DOCTYPE html>
+/<!DOCTYPE html>
 <html>
 	<header>
 		<h1>
@@ -93,3 +97,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </body>
 </html>
+*/
