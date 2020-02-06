@@ -2,6 +2,7 @@
 require_once('Users.php');
 echo "number of times login failed is :";
 echo $_SESSION['failedAuth'];
+$_SESSION
 ?>
 <html>
 	<body>

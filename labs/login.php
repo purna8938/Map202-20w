@@ -9,6 +9,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$user->authenticate($username,$password);
 }
 
+
+
+
+
 ?>
 <?php require_once('header.php'); ?>
 
