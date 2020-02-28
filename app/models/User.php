@@ -24,7 +24,7 @@ class User {
         $statement->execute();
         $rows = $statement->fetch(PDO::FETCH_ASSOC);
 		
-		if (password_verify($password, $rows['PASSWORD'])) {
+		if (password_verify($password, $rows['password'])) {
 			$_SESSION['auth'] = 1;
 			unset($_SESSION['failedAuth']);
 			header('Location: /home');
