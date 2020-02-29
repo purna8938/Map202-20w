@@ -3,7 +3,7 @@
 class Insert extends Controller {
 
     public function index() {	
-		//echo "insert";
+		echo "insert";
 	    $this->view('insert/index');
 	    die;
     }
@@ -16,7 +16,7 @@ class Insert extends Controller {
         $courseid = $_REQUEST['courseid'];
 		$insert=$this->model('AddCourse');
 		$result=$insert->save($courseid,$courseName,$program,$department);
-		 		$this->view('insert/message',['message'=>$result]);
+		$this->view('insert/message',['message'=>$result]);
 	    die;
     }
 

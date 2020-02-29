@@ -37,6 +37,16 @@ if (!isset($_SESSION['auth'])) {
                             <a class="nav-link" href="/courses">Courses
                             </a>
 						</li>
+						
+						
+						<li class="nav-item">
+                            <a class="nav-link" href="/insert">Add Course
+                            </a>
+                        </li>
+						<!--<li class="nav-item">
+                            <a class="nav-link" href="form">Form
+                            </a>
+                        </li>-->
                     </ul>
 					<ul class="nav navbar-nav navbar-right">
                         <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
